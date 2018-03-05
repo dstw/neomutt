@@ -33,11 +33,6 @@
  * | Data              | Description
  * | :---------------- | :--------------------------------------------------
  * | #Index64          | Lookup table for Base64 encoding characters
- *
- * | Function          | Description
- * | :---------------- | :-------------------------------------------------
- * | mutt_b64_decode() | Convert null-terminated base64 string to raw bytes
- * | mutt_b64_encode() | Convert raw bytes to null-terminated base64 string
  */
 
 #include "config.h"
