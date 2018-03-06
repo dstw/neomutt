@@ -25,6 +25,7 @@ env:
     - IGNORE: "Consider increasing DOT_GRAPH_MAX_NODES"
 
 script:
+  - doxygen/gen-tables.sh mutt/*.c
   - doxygen doxygen/doxygen.conf
   - grep -v "$IGNORE" doxygen-build.txt | tee tmp.txt
   - test ! -s tmp.txt
